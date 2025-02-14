@@ -13,10 +13,8 @@ import { twMerge } from "tailwind-merge";
 
 // Utility functions
 const cn = (...inputs: any[]) => {
-  return twMerge(clsx(inputs))
+  return twMerge(clsx(...inputs))
 }
- 
-
 // Font configuration
 const fontSans = FontSans({
   subsets: ["latin"],
