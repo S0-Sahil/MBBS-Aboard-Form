@@ -12,9 +12,10 @@ import { clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 
 // Utility functions
-const cn = (...inputs: any[]) => twMerge(clsx(...inputs));
+const cn = (...inputs: any[]) => {
   return twMerge(clsx(inputs))
 }
+ 
 
 // Font configuration
 const fontSans = FontSans({
